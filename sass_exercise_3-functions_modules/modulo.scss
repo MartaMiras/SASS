@@ -1,0 +1,9 @@
+@function pxToRem($pixels) {
+  @return $pixels;
+}
+
+@mixin estilo-layout($color, $border, $font-size) {
+  color: $color;
+  border: $border;
+  font-size: pxToRem($font-size);
+}

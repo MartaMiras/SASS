@@ -1,0 +1,58 @@
+div article:nth-child(even), div article:nth-child(odd), div h2, div h1 {
+  color: green;
+  border: none;
+  font-size: none;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-align: center;
+}
+
+div {
+  color: red;
+  border: 1px solid red;
+  font-size: 1rem;
+  width: 100%;
+}
+div h2 {
+  border: 1px solid red;
+  padding: 1rem;
+  width: 20%;
+  margin-left: 40%;
+}
+div section {
+  display: flex;
+  padding-bottom: 10px;
+  margin: 15px;
+}
+div article {
+  color: none;
+  border: 1px solid green;
+  font-size: none;
+  text-align: center;
+}
+div article p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div article:nth-child(odd) {
+  color: blue;
+  border: 1px solid green;
+  font-size: 1rem;
+  text-decoration: none;
+}
+div article:last-child {
+  color: green;
+  border: 1px solid blue;
+  font-size: 24px;
+  height: 90px;
+  text-decoration: none;
+}
+div article:nth-child(even) {
+  /* Extendemos los estilos de h2 desde el placeholder para h1 y h2 */
+  color: red;
+  border: 1px solid green;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

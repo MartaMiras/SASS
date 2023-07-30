@@ -1,0 +1,82 @@
+$base-font-size: 16px; 
+%text {
+  color: green;
+  border: none;
+  font-size: none;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-align: center;
+}
+
+div {
+  color: red;
+  border: 1px solid red;
+  font-size: 1rem;
+  width: 100%;
+
+  h1 {
+    @extend %text; 
+  }
+
+  h2 {
+    @extend %text; 
+    border: 1px solid red; 
+    padding: 1rem; 
+  }
+
+  section {
+    display: flex;
+    padding-bottom: 10px;
+    margin: 15px;
+  }
+
+  article {
+    color: none;
+    border: 1px solid green;
+    font-size: none;
+    text-align: center;
+  }
+
+  article p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  article:nth-child(odd) {
+    @extend %text; 
+    color: blue;
+    border: 1px solid green;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  article:last-child {
+    color: green;
+    border: 1px solid blue;
+    font-size: 24px;
+    height: 90px;
+    text-decoration: none;
+  }
+
+  article:nth-child(even) {
+    color: red;
+    border: 1px solid green;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+ 
+  @each $i in 1, 2, 3 {
+    .fs-#{$i}rem {
+      font-size: $i * $base-font-size;
+      background-color: lighten(black, $i * 5); /* Aclarar el color de fondo */
+      color: darken(white, $i * 5); /* Oscurecer el color de texto */
+      width: #{$i * 45}px;
+      height: #{$i * 45}px; 
+      margin: 5px; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    }
+  }
+}
