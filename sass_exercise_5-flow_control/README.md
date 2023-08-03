@@ -15,3 +15,21 @@ The added colors are black and white only
 
     }
 }
+
+
+Agregue una nueva sección al diseño como se muestra en la imagen.
+Las cajas son cuadrados de 45px por lado (a convertir en rem) y su alineación se realiza con reglas flex.
+El color de fondo, el color y el tamaño de fuente se pueden manejar usando el control de flujo (@for, @if, etc...) y los métodos de oscurecer y aclarar (los números tienen un multiplicador igual a 5)
+En particular, necesita crear las clases .fs-1rem, .fs-2rem y .fs-3rem usando @each
+Los colores añadidos son solo en blanco y negro.
+
+
+**Suggerimento (da inserire a parte e quindi da rimuovere dal readme)**
+@para $var de 1 a 20 {
+...
+@if $var == 10 {
+...
+
+
+    }
+}
